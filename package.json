@@ -1,0 +1,21 @@
+{
+  "name": "pie2-atividade1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "api": "node --env-file=.env server/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.0.0"
+  },
+  "devDependencies": {
+    "vite-plus": "^1.0.0"
+  }
+}

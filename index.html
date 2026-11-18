@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f4ea" />
+    <link rel="icon" href="/marca.svg" type="image/svg+xml" />
+    <title>Projeto ONG | Status da API</title>
+  </head>
+  <body>
+    <main class="layout">
+      <header class="intro">
+        <img src="/marca.svg" width="48" height="48" alt="" />
+        <p class="project">Projeto Integrador Extensionista II</p>
+        <h1>Projeto ONG</h1>
+        <p class="description">Página inicial do projeto acadêmico de uma ONG.</p>
+      </header>
+      <section class="card" aria-labelledby="health-title">
+        <div class="card-header">
+          <h2 id="health-title">Conexão com a API</h2>
+          <code>GET /api/health</code>
+        </div>
+        <div class="result" role="status" aria-live="polite">
+          <p id="health-status" data-state="loading">Consultando a API…</p>
+          <p id="detail" hidden>Data e hora da resposta: <time id="timestamp"></time></p>
+          <p id="error" hidden></p>
+        </div>
+        <button id="refresh" type="button">Verificar novamente</button>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
